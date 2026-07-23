@@ -118,7 +118,7 @@ export default function ReportsInsights() {
                   <div className="h-24 bg-card rounded-xl border border-border"></div>
                   <div className="h-24 bg-card rounded-xl border border-border"></div>
                   <div className="h-24 bg-card rounded-xl border border-border"></div>
-                  <p className="text-center text-xs text-muted-foreground mt-2">Gemini AI is analyzing your cashflow...</p>
+                  <p className="text-center text-xs text-muted-foreground mt-2">AI Financial Advisor is analyzing your cashflow...</p>
                 </div>
               ) : (
                 <div className="space-y-3">

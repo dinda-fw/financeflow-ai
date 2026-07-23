@@ -152,7 +152,7 @@ export default function AIReceipts() {
               )}
             >
               <UploadCloud className="w-12 h-12 text-muted-foreground mb-4" />
-              <p className="font-medium text-lg">{isScanning ? "Analyzing with Gemini..." : "Click or Drag Receipt Here"}</p>
+              <p className="font-medium text-lg">{isScanning ? "AI Vision is analyzing receipt..." : "Click or Drag Receipt Here"}</p>
               <p className="text-sm text-muted-foreground mt-2">JPEG, PNG supported. AI extracts merchant, amount, and gives coaching.</p>
             </div>
 
