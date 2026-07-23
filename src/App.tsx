@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
+import { HashRouter, Routes, Route, Navigate } from 'react-router-dom';
 import { useFinance } from './hooks/useFinance';
 
 import LandingPage from './pages/LandingPage';
@@ -18,7 +18,7 @@ function App() {
   const { state } = useFinance();
 
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Routes>
         {/* Public Routes */}
         <Route path="/" element={!state.isAuthenticated ? <LandingPage /> : <Navigate to="/app" />} />
@@ -37,7 +37,7 @@ function App() {
           <Route path="reports" element={<ReportsInsights />} />
         </Route>
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 

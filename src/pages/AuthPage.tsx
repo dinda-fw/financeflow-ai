@@ -71,7 +71,7 @@ export default function AuthPage() {
 
             <div className="text-center text-sm">
               <span className="text-muted-foreground">Belum punya akun? </span>
-              <a href="#" className="text-primary hover:underline font-medium">Bikin akun</a>
+              <a href="#" className="text-primary hover:underline font-medium">Buat akun</a>
             </div>
             
             <div className="relative my-6">
@@ -82,7 +82,7 @@ export default function AuthPage() {
             </div>
 
             <Button variant="outline" className="w-full border-primary/50 text-primary hover:bg-primary/10" onClick={handleFastPass}>
-              Guest Fast Pass (Demo)
+              Guest Fast Pass (Staging live Demo)
             </Button>
           </CardContent>
         </Card>
