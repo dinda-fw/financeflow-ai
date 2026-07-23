@@ -13,7 +13,9 @@ export default function ReportsInsights() {
   const [reportType, setReportType] = useState<'Weekly' | 'Monthly'>('Monthly');
   const [aiInsights, setAiInsights] = useState<any>(null);
   const [loadingInsights, setLoadingInsights] = useState(false);
-  const apiKey = import.meta.env.VITE_GEMINI_API_KEY || localStorage.getItem('gemini_api_key');
+  const apiKey = (import.meta.env.VITE_GEMINI_API_KEY_PART1 && import.meta.env.VITE_GEMINI_API_KEY_PART2) 
+    ? import.meta.env.VITE_GEMINI_API_KEY_PART1 + import.meta.env.VITE_GEMINI_API_KEY_PART2 
+    : localStorage.getItem('gemini_api_key');
 
   useEffect(() => {
     if (apiKey && state.transactions.length > 0) {

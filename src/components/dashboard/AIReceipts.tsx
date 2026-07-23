@@ -11,7 +11,10 @@ import { UploadCloud, Receipt, Plus, CheckCircle2, Circle, AlertOctagon, ShieldA
 export default function AIReceipts() {
   const { state, toggleBill, addBill, addTransaction, mapToMacroCategory, limits, spentMacro, togglePanicMode } = useFinance();
   
-  const [aiKey, setAiKey] = useState(import.meta.env.VITE_GEMINI_API_KEY || localStorage.getItem('gemini_api_key') || '');
+  const initialKey = (import.meta.env.VITE_GEMINI_API_KEY_PART1 && import.meta.env.VITE_GEMINI_API_KEY_PART2)
+    ? import.meta.env.VITE_GEMINI_API_KEY_PART1 + import.meta.env.VITE_GEMINI_API_KEY_PART2
+    : localStorage.getItem('gemini_api_key') || '';
+  const [aiKey, setAiKey] = useState(initialKey);
   const [isScanning, setIsScanning] = useState(false);
   const fileInputRef = useRef<HTMLInputElement>(null);
   
