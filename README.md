@@ -26,7 +26,7 @@ Ikuti langkah-langkah berikut untuk menjalankan project ini di komputer lokal:
 
 ### 1. Clone Repositori
 ```bash
-git clone 
+git clone https://github.com/dinda-fw/financeflow-ai
 cd financeflow-ai
 ```
 
