@@ -1,5 +1,7 @@
 # FinanceFlow AI 🚀
 
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/dinda-fw/financeflow-ai)
+
 FinanceFlow AI adalah aplikasi pelacakan keuangan generasi berikutnya (Next-Gen Financial Tracker) yang berfokus pada analisis cerdas dan kemudahan penggunaan. Aplikasi ini dibangun untuk membantu anak kos, pelajar, hingga pekerja profesional dalam melacak pengeluaran, mengatur budget, dan mengoptimalkan tabungan dengan bantuan Kecerdasan Buatan (AI).
 
 ## ✨ Fitur Utama

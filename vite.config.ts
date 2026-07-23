@@ -8,5 +8,5 @@ export default defineConfig({
     react(),
     tailwindcss(),
   ],
-  base: '/financeflow-ai/',
+  base: process.env.VITE_DEPLOY_TARGET === 'gh-pages' ? '/financeflow-ai/' : '/',
 })
